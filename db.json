@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "title": "Climate Emulation U-Net",
+      "titleLink": "https://github.com/ArmanNurbalin/151bProject",
+      "imgSrc": "assets/climate.png",
+      "imgAlt": "Emulated climate field",
+      "description": "U-Net model to emulate CMIP6 climate outputs using PyTorch Lightning."
+    }
+  ]
+}

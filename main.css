@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url(assets/WinkyRough-VariableFont_wght.ttf);
+}
+
+:root{
+    --main-bg-color: rgba(41, 40, 40, 0.877);
+    --text-font: "CustomFont", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--text-font);
+}
+
+header {
+    background: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 1% 10%;
+    width: 100%;
+
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+nav a{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s ease;
+    margin: 0;
+}
+
+nav a:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+    width: 100%;
+    padding: 1% 10% 0;
+
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+main section h2 {
+    align-self: flex-start;
+    text-align: left;
+}
+
+main section p {
+    font-size: 1.5rem;
+    max-width: 1000px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+contact-form {
+    margin: 0 -10%;
+    padding: 5rem 10%;
+    width: calc(100% + 20%);
+    box-sizing: border-box;
+}
+
+contact-form form {
+    width: 100%;
+    max-width: none;
+    padding: 2rem;
+    box-sizing: border-box;
+
+}
+
+contact-form fieldset {
+    width: 100%;
+    padding: 2rem;
+    border: 2px solid var(--main-bg-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+contact-form legend {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+contact-form button {
+    align-self: center;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2%;
+    cursor: pointer;
+}
+
+contact-form input,
+contact-form select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: inherit;
+}
+
+contact-form textarea {
+  width: 100%;
+  min-height: 15dvh;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+footer {
+    background: var(--main-bg-color);
+    padding: 1% 10%;
+    text-align: center;
+}
+
+footer address {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer address a{
+    display: inline-block;
+}
+
+footer address a img {
+    width: 3rem;
+    transition: 0.2 ease;
+}
+
+footer address a:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+#projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 1rem 0;
+      justify-content: flex-start;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Personal Portfolio Site">
+    <title>Arman Nurbalin Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+        <h1>Arman Nurbalin</h1>
+
+        <nav>
+            <a href="projects.html">Projects</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-me">
+            <picture>
+                <source media="(min-width:650px)" srcset="assets/image.jpg">
+                <source media="(min-width:465px)" srcset="assets/image.jpg">
+                <img src="assets/image.jpg" alt="Profile picture" style="width:auto;">
+            </picture>
+            <div class="about-text">
+                <p>I am a student at <span>UC San Diego</span> currently studying <strong>computer science</strong> in my <em>senior</em> year</p>
+                <p>I enjoy learning about new <i>developments</i> in the tech world, in particular <b>machine learning</b>.</p>
+                <p>Outside of school I enjoy travelling and tasting different cuisines around the world.</p>
+            </div>
+            
+        </section>
+
+
+        
+        <contact-form>
+            <section id="contact-me">
+                <form>
+                    <fieldset>
+                        <legend>Contact Me</legend>
+                        <label for="full_name">Your Full Name:</label><br>
+                        <input type="text" id="full_name" name="full_name"><br>
+                        <label for="email">Your email adress:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="reason">Reason for contacting:</label><br>
+                        <input list="reasons" id="reason" name="reason">
+                        <datalist id="reasons">
+                            <option value="Networking">
+                            <option value="Job">
+                            <option value="Other">
+                        </datalist><br>
+                        <label for="contact-back">Best Way to Contact You Back:</label><br>
+                        <select id="contact-back" name="contact-back">
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
+                        </select><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="ideas" rows="2" cols="20"></textarea><br>
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </section>
+        </contact-form>
+        
+    </main>
+
+    <footer>
+        <address>
+            <a href="mailto:anurbali@ucsd.edu"><img src="assets/email.svg" alt="Email Me Icon"></a>
+            <a href="https://www.linkedin.com/in/arman-nurbalin-2524612a6/"><img src="assets/linkedin-circle.svg" alt="LinkedIn Page Link"></a>
+            <a href="https://www.instagram.com/arman2904/#"> <img src="assets/instagram.svg" alt="Instagram Page Link button"></a>
+        </address>
+    </footer>
+  </body>
+</html>

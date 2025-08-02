@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Experiments</title>
+</head>
+<body>
+    <h1>Experiments</h1>
+    <h2>Creating a Table</h2>
+    <table>
+    <caption>
+        Sample Table
+    </caption>
+    <colgroup>
+        <col />
+        <col span="2" class="candy" />
+        <col span="2" class="fruit" />
+    </colgroup>
+    <tr>
+        <td></td>
+        <th scope="col">Sweet</th>
+        <th scope="col">Sour</th>
+        <th scope="col">Berries</th>
+        <th scope="col">Tropical</th>
+    </tr>
+    <tr>
+        <th scope="row">Food</th>
+        <td>Gummy bears</td>
+        <td>Warheads</td>
+        <td>Strawberry</td>
+        <td>Mangos</td>
+    </tr>
+    </table>
+    <h2>Creating a description list and group related options</h2>
+    <dl>
+        <dt>Apple</dt>
+        <dd>A sweet fruit</dd>
+        <dt>Lemon</dt>
+        <dd>A sour fruit</dd>
+    </dl>
+
+    <label for="fruits">Choose a fruit</label>
+    <select name="fruits" id="fruits">
+        <optgroup label="Berries">
+            <option value="strawberry">Strawberry</option>
+            <option value="blueberry">Blueberry</option>
+        </optgroup>
+        <optgroup label="Tropical">
+            <option value="papaya">Papaya</option>
+            <option value="pineapple">Pineapple</option>
+        </optgroup>
+    </select>
+
+    <h2>Creating abbreviations and definitions</h2>
+    <p><dfn><abbr title="National Aeronautics and Space Administration">NASA</abbr></dfn> is the U.S. agency responsible for space exploration.</p>
+
+    <h2>Creating Progress bars</h2>
+    <label for="progress_bar">Assignment Completed:</label>
+    <progress id="file" value="90" max="100">90%</progress>
+
+    <h2>Using ins, del and aside tags</h2>
+    <p><del>Version 1</del> of the page was updated into <ins>Version 2</ins></p>
+    <aside>
+        <h3>Version 2</h3>
+        <p>Version 2 provides fixes on the some of the bugs and errors of Version 1 that were reported by users</p>
+    </aside>
+
+    <h2>Basic Search Bar</h2>
+    <search>
+        <label>
+            Search For Website
+            <input type="search" name="bar" id="bar" placeholder="Type URL">
+            <button type="submit">Search</button>
+        </label>
+    </search>
+
+    <h2>Script and noscript</h2>
+    <script>
+        document.write('JavaScript examples');
+    </script>
+
+    <noscript>
+        <p>JavaScript is not supported</p>
+    </noscript>
+
+    <h2>Figure Captions</h2>
+    <figure>
+        <img src="assets/graph.png" alt="Random Graph">
+        <figcaption>This is a random graph</figcaption>
+    </figure>
+
+    <h2>Quotation and citation</h2>
+    <blockquote cite="https://www.pdfbooksworld.com/bibi/pre.html?book=52.epub">
+        <p>Wisely and slow; they stumble that run fast.</p>  
+    </blockquote>
+    <p>-William Shakespeare, <cite>Romeo and Juliet</cite></p>
+
+    <h2>Grouping headings</h2>
+    <hgroup>
+        <h2>These are different</h2>
+        <h3>Level headings</h3>
+    </hgroup>
+    
+    <h2>Group video and audio</h2>
+    <video controls>
+        <source src="assets/video.mp4" type="video/mp4">
+    </video>
+    <audio controls>
+        <source src="assets/audio.mp3" type="audio/mp3">
+    </audio>
+
+    <template id="sample_template">
+        <div class="sample_temp">
+            <p>This is a sample template</p>
+        </div>
+    </template>
+
+    <h2>Custom Hello World</h2>
+    <hello-world></hello-world>
+
+    <script>
+        class HelloWorld extends HTMLElement {
+        connectedCallback() {
+            console.log("Hello world!");
+        }
+        }
+        customElements.define('hello-world', HelloWorld);
+    </script>
+
+    <h2>Extra Credit MathML formula</h2>
+    <math> 
+        <mrow>
+            <mi>E</mi>
+            <mo>=</mo>
+            <mi>m</mi>
+            <mo>&#x2062;</mo>
+            <msup>
+                <mi>c</mi>
+                <mn>2</mn>
+            </msup>
+        </mrow>
+        
+    </math>
+</body>
+</html>
