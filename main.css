@@ -220,4 +220,10 @@ footer address a:hover img {
     main {
         padding: 1rem;
     }
+
+    img {
+        border-radius: 50%;
+        max-width: 100%;
+        height: auto;
+    }
 }
